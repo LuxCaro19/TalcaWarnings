@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "482459118524",
+    "firebase_url": "https://talca-warnings.firebaseio.com",
+    "project_id": "talca-warnings",
+    "storage_bucket": "talca-warnings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482459118524:android:821956a3643b4bf232d9b9",
+        "android_client_info": {
+          "package_name": "com.example.talcawarningsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482459118524-j4fl7kcqumpeldo8as95a6pmmpdqdc4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talcawarningsapp",
+            "certificate_hash": "219691035c16b3b2af60e0d7fc3676eff6f4f5c7"
+          }
+        },
+        {
+          "client_id": "482459118524-6s225bj2v5k7q6ftk2fad2f15r4vaqtu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCofJYDD7MyXawPne_b1ia6N2U1zQc0_so"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482459118524-6s225bj2v5k7q6ftk2fad2f15r4vaqtu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
