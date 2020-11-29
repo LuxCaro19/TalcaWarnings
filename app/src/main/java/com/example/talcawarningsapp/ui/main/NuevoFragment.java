@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.talcawarningsapp.R;
 import com.example.talcawarningsapp.model.Denuncia;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -21,7 +22,7 @@ public class NuevoFragment extends Fragment {
 
     EditText txt_titulo, txt_direccion;
     Button button_crear;
-
+    FirebaseAuth auth;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,7 +33,7 @@ public class NuevoFragment extends Fragment {
          txt_titulo=view.findViewById(R.id.nuevo_input_titulo);
          txt_direccion=view.findViewById(R.id.nuevo_input_direccion);
          button_crear = view.findViewById(R.id.nuevo_bt_crearDenuncia);
-
+         auth = FirebaseAuth.getInstance();
          button_crear.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
@@ -40,9 +41,6 @@ public class NuevoFragment extends Fragment {
                  String mensaje = crearDenuncia();
 
                  Toast.makeText(getActivity(),mensaje, Toast.LENGTH_LONG).show();
-
-
-
 
              }
          });
@@ -55,9 +53,10 @@ public class NuevoFragment extends Fragment {
     public String crearDenuncia(){
 
         String titulo, direccion, uid, msg;
-
+        uid = auth.getCurrentUser().getUid();
         titulo = txt_titulo.getText().toString();
         direccion = txt_direccion.getText().toString();
+
 
         if (titulo.isEmpty()||direccion.isEmpty()){
 
@@ -66,13 +65,12 @@ public class NuevoFragment extends Fragment {
         }else{
 
             FirebaseDatabase database = FirebaseDatabase.getInstance();
-            DatabaseReference myRef = database.getReference("denuncias");
+            DatabaseReference myRef = database.getReference("denuncias").child(uid);
 
             Denuncia denuncia = new Denuncia();
 
             denuncia.setTitulo(titulo);
             denuncia.setDireccion(direccion);
-            denuncia.setId("d1");
             myRef.push().setValue(denuncia);
 
             msg= "Denuncia registrada correctamente";
