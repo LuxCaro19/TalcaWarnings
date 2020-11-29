@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "482459118524-il3k9g7p1cachslj9ugfq55q26cakemg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talcawarningsapp",
+            "certificate_hash": "012a72b247468aff07151f70f36891433206d7e0"
+          }
+        },
+        {
           "client_id": "482459118524-j4fl7kcqumpeldo8as95a6pmmpdqdc4n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
