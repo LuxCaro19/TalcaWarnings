@@ -6,12 +6,9 @@
     android:background="@color/backFragments"
     tools:context=".ui.main.DenunciasFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_denuncias"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="RecyclerView Denuncias"
-        android:textSize="20dp"
-        android:textColor="@color/colorAccent"
-        />
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

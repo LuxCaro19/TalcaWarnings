@@ -7,5 +7,6 @@
     <color name="formCardPanel">#EDECEC</color>
     <color name="botonDenunciarColor">#F8EFC83D</color>
     <color name="formDenunciarBackColor">#8ABFBFBF</color>
+    <color name="selectorCard">#E9434343</color>
 
 </resources>

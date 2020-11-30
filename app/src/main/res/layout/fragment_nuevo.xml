@@ -84,7 +84,7 @@
                 android:padding="15dp"
                 android:fontFamily="@font/nerko_one"
                 android:textSize="25dp"
-                android:background="@drawable/button_denunciar"
+                android:background="@drawable/selector_button"
 
                 />
 
