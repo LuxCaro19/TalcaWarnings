@@ -3,6 +3,7 @@ package com.example.talcawarningsapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.talcawarningsapp.model.Usuario;
+import com.example.talcawarningsapp.ui.main.NuevoFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -54,11 +56,24 @@ public class RegisterActivity extends AppCompatActivity {
                                 user.setUid(task.getResult().getUser().getUid());
                                 myRef.push().setValue(user);
                                 Toast.makeText(RegisterActivity.this,"Cuenta creada correctamente",Toast.LENGTH_LONG).show();
+
+                                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                                startActivity(intent);
+                                finish();
+
                             } else {
                                 Toast.makeText(RegisterActivity.this,"Error al crear la cuenta",Toast.LENGTH_LONG).show();
                             }
                         }
                     });
         }
+    }
+
+    public void volverAlLogin(View view) {
+
+        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+
     }
 }

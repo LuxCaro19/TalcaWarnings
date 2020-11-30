@@ -29,13 +29,14 @@ public class LoginActivity extends AppCompatActivity {
         }else{
             Intent intent = new Intent(LoginActivity.this,MainActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 
     public void launchRegister(View view) {
         Intent intent = new Intent(this,RegisterActivity.class);
         startActivity(intent);
-        finish();
+
     }
 
     public void iniciarSesion(View view) {
