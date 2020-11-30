@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Talca Warnings"
+        android:gravity="center"
+        android:fontFamily="@font/nerko_one"
+        android:textSize="35dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/small_logo"
+        android:layout_gravity="center"
+
+
+        />
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/login_txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/form_panel"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:padding="8dp"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:background="@drawable/form_panel"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:padding="8dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:onClick="iniciarSesion"
+        android:background="@drawable/selector_button"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nerko_one"
+        android:textSize="25dp"
+        android:padding="15dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2196F3"
+        android:text="¿No tienes cuenta? ¡Registrate!"
+        android:onClick="launchRegister"
+        android:gravity="center"
+        android:fontFamily="@font/mitr"
+
+        />
+
+</LinearLayout>

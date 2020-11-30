@@ -20,6 +20,8 @@
             android:padding="@dimen/appbar_padding"
             android:text="@string/app_name"
             android:textColor="#303030"
+            android:fontFamily="@font/nerko_one"
+            android:textSize="25dp"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
         <com.google.android.material.tabs.TabLayout
@@ -28,6 +30,9 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             app:tabTextColor="@color/colorAccent"
+            app:tabTextAppearance="@style/font_tabs_mitr"
+
+
             />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -43,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_send"
+        android:onClick="cerrarSesion"
+        app:srcCompat="@android:drawable/ic_menu_revert"
         />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

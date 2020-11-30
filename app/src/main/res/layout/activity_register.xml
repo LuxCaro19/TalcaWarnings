@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:layout_margin="30dp"
+    >
+
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/small_logo"
+        android:layout_gravity="center"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrate"
+        android:gravity="center"
+        android:fontFamily="@font/nerko_one"
+        android:textSize="35dp"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/form_panel"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/register_txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:background="@drawable/form_panel"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:padding="8dp"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/register_txt_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Celular"
+        android:background="@drawable/form_panel"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:padding="8dp"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/register_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:background="@drawable/form_panel"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:padding="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear cuenta"
+        android:onClick="crearCuenta"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/nerko_one"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+
+        />
+</LinearLayout>

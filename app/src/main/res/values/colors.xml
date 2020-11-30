@@ -3,4 +3,10 @@
     <color name="colorPrimary">#DFEFC83D</color>
     <color name="colorPrimaryDark">#D8C3A614</color>
     <color name="colorAccent">#2C2C2C</color>
+    <color name="backFragments">#8BFFB700</color>
+    <color name="formCardPanel">#EDECEC</color>
+    <color name="botonDenunciarColor">#F8EFC83D</color>
+    <color name="formDenunciarBackColor">#8ABFBFBF</color>
+    <color name="selectorCard">#E9434343</color>
+
 </resources>

@@ -1,54 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ui.main.NuevoFragment">
-
+    tools:context=".ui.main.NuevoFragment"
+    android:background="@color/backFragments"
+    
+    >
 
     <TextView
 
-        android:layout_marginTop="30dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Quieres hacer una denuncia?"
+        android:text="¿Quieres realizar una denuncia?"
         android:gravity="center"
+        android:layout_above="@id/nuevo_LinearLayout"
+        android:layout_marginBottom="50dp"
+
+        android:fontFamily="@font/nerko_one"
+        android:textSize="27dp"
+        android:textColor="@color/colorAccent"
 
         />
 
+        <LinearLayout
+            android:id="@+id/nuevo_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="130dp"
+            android:background="@drawable/card_panel_form"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:paddingTop="60dp"
 
-    <EditText
-
-        android:id="@+id/nuevo_input_titulo"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Titulo"
-
-        />
-
-    <EditText
-
-        android:id="@+id/nuevo_input_direccion"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Direccion"
-
-        />
-
-
-    <Button
-        android:id="@+id/nuevo_bt_crearDenuncia"
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Denunciar"
-
-        />
+            >
 
 
 
 
-</LinearLayout>
+            <EditText
+
+                android:id="@+id/nuevo_input_titulo"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titulo"
+                android:background="@drawable/form_panel"
+                android:textColorHint="@color/colorAccent"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:padding="8dp"
+                />
+
+
+
+
+
+            <EditText
+
+                android:id="@+id/nuevo_input_direccion"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion"
+                android:background="@drawable/form_panel"
+                android:textColorHint="@color/colorAccent"
+
+                android:fontFamily="@font/gloria_hallelujah"
+                android:padding="8dp"
+
+
+                />
+
+
+            <Button
+                android:id="@+id/nuevo_bt_crearDenuncia"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Denunciar"
+                android:padding="15dp"
+                android:fontFamily="@font/nerko_one"
+                android:textSize="25dp"
+                android:background="@drawable/selector_button"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    
+
+
+
+</RelativeLayout>
