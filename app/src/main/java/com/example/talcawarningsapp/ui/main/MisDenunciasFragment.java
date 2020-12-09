@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.talcawarningsapp.R;
 import com.example.talcawarningsapp.adapter.AdapterDenuncia;
+import com.example.talcawarningsapp.adapter.AdapterMisDenuncias;
 import com.example.talcawarningsapp.model.Denuncia;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -56,7 +57,7 @@ public class MisDenunciasFragment extends Fragment {
                     LinearLayoutManager lm = new LinearLayoutManager(getActivity());
                     lm.setOrientation(RecyclerView.VERTICAL);
 
-                    AdapterDenuncia adapterDenuncia = new AdapterDenuncia(getActivity(),R.layout.item_misdenuncias,list);
+                    AdapterMisDenuncias adapterDenuncia = new AdapterMisDenuncias(R.layout.item_misdenunciasdelete,list);
                     recyclerMisDenuncias.setLayoutManager(lm);
                     recyclerMisDenuncias.setAdapter(adapterDenuncia);
                 }

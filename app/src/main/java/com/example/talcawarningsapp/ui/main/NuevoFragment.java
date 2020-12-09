@@ -71,6 +71,7 @@ public class NuevoFragment extends Fragment {
 
             denuncia.setTitulo(titulo);
             denuncia.setDireccion(direccion);
+            denuncia.setEstado("1");
             myRef.push().setValue(denuncia);
 
             msg= "Denuncia registrada correctamente";
