@@ -3,6 +3,9 @@
     <string name="tab_text_1">Mis Denuncias</string>
     <string name="tab_text_2">Nueva</string>
     <string name="tab_text_3">Denuncias</string>
+    <string name="not_login_in">No se puede iniciar sesión</string>
+    <string name="not_firebase_auth">No se pudo iniciar sesion con Firebase</string>
+    <string name="not_close_session">No se pudo cerrar sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
