@@ -52,21 +52,25 @@
         android:fontFamily="@font/gloria_hallelujah"
         android:padding="8dp"
         />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Iniciar sesión"
         android:onClick="iniciarSesion"
         android:background="@drawable/selector_button"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/nerko_one"
         android:textSize="25dp"
         android:padding="15dp"
         />
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/signInGoogle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"

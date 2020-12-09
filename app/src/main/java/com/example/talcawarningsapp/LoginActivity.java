@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
         signInGoogle = (SignInButton) findViewById(R.id.signInGoogle);
-        signInGoogle.setOnClickListener(new View.OnClickListener() {
+        signInGoogle.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
